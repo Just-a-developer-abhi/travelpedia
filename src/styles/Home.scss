@@ -4,42 +4,93 @@
 
     width: 100%;
     height: 100vh;
-    background-color: $second;
+    background-color: rgb(231, 226, 219);
     border-radius: 0 0 200px 200px;
 
 
     > main {
+        background-color: white;
         position: absolute;
         text-transform: uppercase;
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        width: 100%;
-        height: 100%;
-        padding: 2rem;
+        
+        width: 90%;
+        height: 40vh;
+        padding: 1rem;
+        margin-left: 5%;
+        margin-top: -10vh;
         justify-content: center;
+        align-items: center;
+        border-radius: 10px;
 
 
-        > h1{
-            font: 300 6rem "Roboto";
-            color: $dark;
-            font-family: cursive;
-        }
-        > p{
-            font: 600 1rem $text1;
-            color: $dark;
-            font-family: cursive;
-        }
-    }
+      >div {
+          margin-top: 10%;
+          margin-right: 5%;
+          height: 40vh;
+          width: 25%;
+          justify-content: center;
+          align-items: center;
+          
+                >h1 {
+                    margin-top: 3px;
+                    height: 12vh;
+                    font: 300 1.5rem "Roboto";
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    color: rgb(139, 129, 67);
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                >h5 {
+                    height: 3vh;
+                    font: 700 1rem "Roboto";
+                }
+            
+                >p {
+                    font: 300 0.9rem $text1;
+                    color: $dark;
+                    font-family: cursive;
+                }
+      }
 
-    &::before{
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: no-repeat center/auto url(../assets/book4.jpg) ;
-        filter: blur(3px);
-        border-radius: 0 0 200px 200px;
+      >container {
+          background-color: white;
+          height: 30vh;
+          margin: 5px;
+          width: 60%;
+          display: flex;
+          justify-content: center;
+
+          >div{
+              height: 30vh;
+              width: 80rem;
+              background-color: rgb(255, 253, 250);
+              padding: 1rem;
+              border: 0.1px solid black;
+              margin: 0.5rem;
+              border-radius: 5px;
+              justify-content: center;
+              align-items: center;
+              display: flex;
+              flex-direction: column;
+              >h3{
+                font: 700 1rem "Roboto";
+              }
+              >p{
+                font: 700 0.7rem "Roboto";
+                letter-spacing: 1px;
+                word-spacing: 2px;
+              }
+
+              >img{
+                  width: 100%;
+                  border-bottom: 0.1px solid black;
+                  height: 70%;
+
+              }
+          }
+      }
     }
 }
 
@@ -178,4 +229,11 @@
         transform: translateY(-10px);
 
     }
+}
+
+.cards{
+    >div{
+        background-color: rgb(31, 26, 17);
+    }
+
 }

@@ -1,14 +1,37 @@
 import React from 'react'
-import vs from '../assets/book-trans.webp'
+import vs from '../assets/travel8.jpg'
 import {AiFillGoogleCircle, AiFillAmazonCircle, AiFillYoutube, AiFillInstagram} from "react-icons/ai"
+import img1 from '../assets/India1.jpg'
 
 const Home = () => {
   return (
    <>
     <div className='home' id='home'>
       <main>
-        <h1>Kitab-ghar</h1>
-        <p>It's not book but the knowledge that we offer</p>
+        <div>
+          <h5>INTRODUCING</h5>
+          <h1>TRAVELPEDIA Recommended Destinations </h1>
+          <p>Escape to the epitome of luxury, packed with signature amenities and services</p>
+        </div>
+              <container className='cards'>
+                    <div>
+                      <img src={img1} alt="item1" />
+                    <h3>Banaras</h3>
+                    <p>Visit the city older than the history itself.</p>
+                    </div>
+                    
+                    <div>
+                      <img src={img1} alt="item1" />
+                    <h3>Banaras</h3>
+                    <p>Visit the city older than the history itself.</p>
+                     </div>
+
+                    <div>
+                      <img src={img1} alt="item1" />
+                    <h3>Banaras</h3>
+                    <p>Visit the city older than the history itself.</p>
+                    </div>
+              </container>
       </main>
     </div>
 

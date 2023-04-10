@@ -1,9 +1,9 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import img1 from '../assets/mountains2.jpg'
-import img2 from '../assets/mountains2.jpg'
-import img3 from '../assets/mountains2.jpg'
+import img1 from '../assets/egypt.jpg'
+import img2 from '../assets/travel1.jpg'
+import img3 from '../assets/travel2.jpg'
 
 const Bookshelf = () => {
   return (
@@ -12,7 +12,7 @@ const Bookshelf = () => {
         <Carousel 
         infiniteLoop 
         autoPlay 
-        interval={1500} 
+        interval={1000} 
         showThumbs={false} 
         showStatus={false}>
             
