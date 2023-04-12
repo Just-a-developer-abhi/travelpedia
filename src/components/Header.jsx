@@ -18,7 +18,7 @@ const Header = () => {
    <nav>
      <div>
             <div className='logo'>
-                <h1>travelpedia</h1>
+                <h1 className='logohead'>travelpedia</h1>
             </div>
               <main> 
                 <div>

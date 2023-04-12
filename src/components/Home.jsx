@@ -112,18 +112,15 @@ const Home = () => {
 
       <div>
         <p>
-          We have have prepared the paradises of comfort for you where you can live a lifestyle that you deserve. We've made sure for that fit into your pockets.    
+          We have have prepared the paradises of comfort for you where you can live a lifestyle that you deserve. We've made sure that it fits into your pockets.    
         </p>
       </div>
-
-      <button className='button'>
-        <h1>Choose Hotels</h1></button>
     </div>
 
     <div className="home3" id='camping'>
       <div>
         <h1>Want to go camping?</h1>
-        <p>If nature is something that excites you then you are in for a treat. From treking in the snow Uttarkhand to caming the jungles of Himachal, we've got you covered. Visit our adventure section for booking your seat in the next adventure.</p>
+        <p>If nature is something that excites you then you are in for a treat. From trekking in the snow of Uttarkhand to camping the jungles of Himachal, we've got you covered. Visit our adventure section for booking your seat in the next adventure.</p>
       </div>
       
     </div>
@@ -132,7 +129,7 @@ const Home = () => {
     <div className="home4">
       <div id='road'>
         <h1>Want to go on a road trip?</h1>
-        <p>If you see youself enjoying on roads, heading to a destination that nobody knows like in the movies Dil Chahta hai and Zindagi Na Milegi Dobara. Just pack your bags and let us handle everything. We will take you to the roads that have been carved into the mountains to valley that is truly designed by the god himself. Book your tickets now.</p>
+        <p>If you see youself enjoying on the roads, heading to a destination that nobody knows like in the movies Dil Chahta hai and Zindagi Na Milegi Dobara. Just pack your bags and let us handle everything. We will take you to the roads that have been carved into the mountains and through the vallies which are truly designed by the god himself. Book your tickets now.</p>
         
       </div>
     </div>
