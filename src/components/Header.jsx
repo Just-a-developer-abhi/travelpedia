@@ -23,23 +23,23 @@ const Header = () => {
               <main> 
                 <div>
                   <img src={img1} alt="flight" />
-                     <HashLink to={"/#home"}>Flights</HashLink>
+                     <HashLink to={"/#packages"}>Our Packages</HashLink>
                 </div>
                 <div>
                   <img src={img2} alt="Hotels" />
-                     <HashLink to={"/#about"}>Hotels</HashLink>
+                     <HashLink to={"/#hotels"}>Hotels</HashLink>
                 </div>
                 <div>
                   <img src={img3} alt="Homestays" />
-                     <HashLink to={"/#brands"}>Camping</HashLink>
+                     <HashLink to={"/#camping"}>Camping</HashLink>
                 </div>
                 <div>
                   <img src={img4} alt="Travel" />
-                   <Link to={"/contact"}>Road Trip</Link>
+                   <HashLink to={"/#road"}>Road Trip</HashLink>
                 </div>
                 <div>
                   <img src={img5} alt="Packages" />
-                     <Link to={"/bookshelf"}>Our Packages</Link>
+                     <Link to={"/contact"}>Contact Us</Link>
                 </div>
               </main>
      </div>

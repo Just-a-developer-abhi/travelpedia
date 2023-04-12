@@ -1,22 +1,51 @@
 import React from 'react'
+import {AiFillGoogleCircle, AiFillAmazonCircle, AiFillYoutube, AiFillInstagram} from "react-icons/ai"
 
 const Footer = () => {
   return (
     <footer>
-        <div>
-            <h1>kitabghar</h1>
-            <p>@all rights reserved</p>
-        </div>
+           <div className="footer">
+      <div>
+        <main>
+            <h5>@AllRightsReserved</h5>
+            <h3>Travelpedia</h3>
+        </main>
+        
+        <h1>You can find us on</h1>
+        <article>
 
-        <div>
-            <h5>Follow us</h5>
-            <div>
-                <a href="https://www.youtube.com/channel/UC23Ius6zp3o4PbGcm7mn9ow" target={"blank"}>Youtube</a>
-                <a href="https://www.instagram.com/falling_for_odds/" target={"blank"}>Instagram</a>
-                <a href="https://www.linkedin.com/in/javadevabhi/" target={"blank"}>LinkedIn</a>
-                <a href="https://github.com/Just-a-developer-abhi" target={"blank"}>GitHub</a>
+            <div style={{
+              animationDelay: "0.3s"
+            }}>
+              <AiFillGoogleCircle/>
+              <p>Google</p>            
             </div>
-        </div>
+
+            <div style={{
+              animationDelay: "0.5s"
+            }}>
+              <AiFillAmazonCircle/>
+              <p>Amazon</p>            
+            </div>
+
+            <div style={{
+              animationDelay: "0.7s"
+            }}>
+              <AiFillInstagram/>
+              <p>Instagram</p>            
+            </div>
+
+            <div style={{
+              animationDelay: "1s"
+            }}>
+              <AiFillYoutube/>
+              <p>Youtube</p>            
+            </div>
+
+
+        </article>
+      </div>
+    </div>
     </footer>
   )
 }

@@ -3,9 +3,8 @@
 .home{
 
     width: 100%;
-    height: 100vh;
-    background-color: rgb(231, 226, 219);
-    border-radius: 0 0 200px 200px;
+    height: 110vh;
+    background-image: linear-gradient(rgb(218, 190, 35),white);
 
 
     > main {
@@ -15,7 +14,7 @@
         display: flex;
         
         width: 90%;
-        height: 40vh;
+        height: 35vh;
         padding: 1rem;
         margin-left: 5%;
         margin-top: -10vh;
@@ -25,12 +24,12 @@
 
 
       >div {
-          margin-top: 10%;
           margin-right: 5%;
           height: 40vh;
           width: 25%;
           justify-content: center;
-          align-items: center;
+          display: flex;
+          flex-direction: column;
           
                 >h1 {
                     margin-top: 3px;
@@ -55,8 +54,8 @@
       }
 
       >container {
-          background-color: white;
-          height: 30vh;
+          padding: 1em;
+          height: 35vh;
           margin: 5px;
           width: 60%;
           display: flex;
@@ -65,7 +64,7 @@
           >div{
               height: 30vh;
               width: 80rem;
-              background-color: rgb(255, 253, 250);
+              background-color: rgb(247, 243, 239);
               padding: 1rem;
               border: 0.1px solid black;
               margin: 0.5rem;
@@ -89,14 +88,41 @@
                   height: 70%;
 
               }
+              
           }
+          >div:hover{
+                  transition: 1s;
+                  transform: scale(1.05);
+                  cursor: pointer;
+              }
       }
+    }
+}
+
+.home1{
+    width: 100%;
+    height: 90vh;
+    margin-top: -50rem;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: $second;
+
+    > .carousel {
+        width: 100%;
+        height: 55vh;
+        justify-content: flex-end;
+
+        >div {
+            width: 100%;
+            height: 55vh;
+        }
     }
 }
 
 .home2{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-color: $second;
     padding: 500px 0;
     display: flex;
@@ -105,8 +131,7 @@
     margin-top: -200px;
 
     > img {
-        width: 30%;
-        animation: imgUp 0.7s linear infinite alternate;
+        width: 50%;
     }
 
     > div {
@@ -117,6 +142,7 @@
         align-items: center;
         padding: 5rem;
         height: 100vh;
+        margin-top: -30vh;
 
         > p{
             color: $first;
@@ -124,6 +150,9 @@
             word-spacing: 5px;
             font: 100 1.2rem $text2;
         }
+    }
+    >.button{
+        display: none;
     }
 }
 
@@ -138,7 +167,7 @@
         width: 70%;
         height: 100vh;
         background-color: $first;
-        border-radius: 0 200px 200px 0;
+        border-radius:50%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -146,11 +175,15 @@
         padding: 2rem;
 
         > h1{
+            font-size: 1rem;
             text-transform: uppercase;
-            border-bottom: 2px solid $dark;
+            border-bottom: 1px solid $dark;
             padding: 0.5rem;
             width: 16rem;
             color: $dark;
+            display: flex;
+            align-items: centre;
+            justify-content: center;
         }
         >p {
             padding: 2rem;
@@ -160,68 +193,62 @@
             font: italic 100 1.2rem $text2;
         }
     }
+    > div:hover{
+        z-index: 1;
+        transition: 1s;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
 }
 
 .home4{
-        padding-top: 5rem;
         width: 100%;
-        height: 100vh;
-        background-color: $second;
-        display: flex;
-        justify-content: flex-end;
-
-    > div {
-        background-color: $third;
-        border-radius: 200px 0 0 200px;
-        width: 70%;
-        height: 70vh;
-        padding: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    > h1{
-        color: $first;
-        text-transform: uppercase;
-        width: 100px;
-        border-bottom: 2px $first;
-        padding:0.5rem;
-        margin: 10px;
-        font-size: medium;
-        
-    }
-
-    > article {
-        display: flex;
-        margin: 2rem 0;
-        flex-wrap: wrap;
-        justify-content: center;
-        > div {
-            animation: imgUp 0.7s linear infinite alternate;
-            margin: 1rem;
-            height: 5rem;
-            width: 5rem;
-            background-color: $first;
-            border-radius: 50%;
+            height: 150vh;
+            background-color: $second;
+            margin-top: -200px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: $dark;
-            cursor: pointer;
-            transition: all 0.5;
-
-            &:hover {
-                filter: invert(1);
+            justify-content: flex-end;
+            padding-top: 3rem;
+        
+            >div {
+                margin-top: 15rem;
+                width: 70%;
+                height: 100vh;
+                background-color: $first;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem;
+        
+                >h1 {
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid $dark;
+                    padding: 0.5rem;
+                    width: 20rem;
+                    color: $dark;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+        
+                >p {
+                    padding: 2rem;
+                    letter-spacing: 1px;
+                    word-spacing: 5px;
+                    line-height: 170%;
+                    font: italic 100 1.2rem $text2;
+                }
             }
-
-            > svg {
-                font-size: 1rem;
+        
+            >div:hover {
+                z-index: 1;
+                transition: 1s;
+                transform: scale(1.05);
+                cursor: pointer;
             }
-        }
-    }
-
-    }
 }
 
 @keyframes imgUp {
